@@ -1,20 +1,67 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 * {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat" !important, sans-serif;
 }
 
-.side {
-  background: #afc;
+body, html {
+  height: 100%;
 }
 
-.side-content {
-  margin-left: 60px;
-  margin-top: 60px;
-  width: 200px;
+.bg-parallax {
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.side-content ul {
-  list-style-type: none;
-  color: #66f;
+.bg-parallax h2 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.bg-parallax p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  color: white;
+}
+
+.bg-parallax#top-pic {
+  min-height: 100%;
+  background-image: url('../img/top.jpg');
+}
+
+.bg-parallax#me-pic {
+  min-height: 50%;
+  background-image: url('../img/me.jpg');
+}
+
+.bg-parallax#skillsample-pic {
+  min-height: 50%;
+  background-image: url('../img/skillsample.jpg');
+  color: black;
+}
+
+.content-wrapper {
+  padding: 50px 0;
+}
+
+.bg-gray {
+  background-color: #ccc;
+  padding: 10px 10px;
+}
+
+@media (max-width: 500px) {
+  .bg-parallax {
+    min-height: 100%;
+    background-attachment: scroll;
+  }
 }
