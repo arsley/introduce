@@ -17,7 +17,7 @@ body, html {
   background-size: cover;
 }
 
-.bg-parallax h2 {
+.caption {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -26,7 +26,8 @@ body, html {
   font-weight: bold;
 }
 
-.bg-parallax p {
+.comment {
+  margin-bottom: 0;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -47,16 +48,41 @@ body, html {
 .bg-parallax#skillsample-pic {
   min-height: 50%;
   background-image: url('../img/skillsample.jpg');
-  color: black;
+}
+
+.bg-parallax#hobbies-pic {
+  min-height: 50%;
+  background-image: url('../img/hobbies.png');
 }
 
 .content-wrapper {
   padding: 50px 0;
 }
 
-.bg-gray {
-  background-color: #ccc;
+.caption .bg-gray {
+  background-color: #aaa;
   padding: 10px 10px;
+}
+
+.comment .bg-gray {
+  background-color: #aaa;
+  padding: 2px 0 2px 2px;
+}
+
+.footer-links {
+  background-color: #ddd;
+  padding-top: 20px;
+}
+
+.footer-links ul {
+  margin: 0 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-links li {
+  display: inline-block;
+  padding: 0 10px;
 }
 
 @media (max-width: 500px) {
