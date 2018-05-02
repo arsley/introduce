@@ -69,6 +69,52 @@ body, html {
   }
 }
 
+$border-color: rgba(black, .3);
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  // color: rgba(black, .7);
+  border-left: 2px solid $border-color;
+
+  h3 {
+    font-size: 2em;
+  }
+
+  &::before {
+    content: attr(date);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    font-weight: 700;
+    font-size: .785em;
+  }
+
+  &::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid $border-color;
+    background: white;
+  }
+
+  // TODO: fix to hide right border
+  // &:last-child {
+  //   border-image: linear-gradient(
+  //     to bottom,
+  //     $border-color 60%,
+  //     rgba($border-color, 0)) 1 100%
+  //   ;
+  // }
+}
+
 .footer-links {
   background-color: #ddd;
   padding-top: 20px;
