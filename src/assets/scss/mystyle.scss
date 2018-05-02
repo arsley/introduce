@@ -9,6 +9,26 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &#top-pic {
+    min-height: 100%;
+    background-image: url('../img/top.jpg');
+  }
+
+  &#me-pic {
+    min-height: 50%;
+    background-image: url('../img/me.jpg');
+  }
+
+  &#skillsample-pic {
+    min-height: 50%;
+    background-image: url('../img/skillsample.jpg');
+  }
+
+  &#hobbies-pic {
+    min-height: 50%;
+    background-image: url('../img/hobbies.png');
+  }
 }
 
 .caption {
@@ -19,6 +39,12 @@ body, html {
   color: white;
   font-weight: bold;
   letter-spacing: 3px;
+
+  .bg-gray {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 10px 10px;
+    border-radius: 7px;
+  }
 }
 
 .comment {
@@ -28,62 +54,35 @@ body, html {
   width: 100%;
   text-align: right;
   color: white;
-}
 
-.bg-parallax#top-pic {
-  min-height: 100%;
-  background-image: url('../img/top.jpg');
-}
-
-.bg-parallax#me-pic {
-  min-height: 50%;
-  background-image: url('../img/me.jpg');
-}
-
-.bg-parallax#skillsample-pic {
-  min-height: 50%;
-  background-image: url('../img/skillsample.jpg');
-}
-
-.bg-parallax#hobbies-pic {
-  min-height: 50%;
-  background-image: url('../img/hobbies.png');
+  .bg-gray {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 2px 0 2px 2px;
+    border-radius: 2px;
+  }
 }
 
 .content-wrapper {
   padding: 50px 0;
-}
-
-.content-wrapper h3 {
-  letter-spacing: 3px;
-}
-
-.caption .bg-gray {
-  background-color: rgba(0, 0, 0, 0.25);
-  padding: 10px 10px;
-  border-radius: 7px;
-}
-
-.comment .bg-gray {
-  background-color: rgba(0, 0, 0, 0.25);
-  padding: 2px 0 2px 2px;
-  border-radius: 2px;
+  h3 {
+    letter-spacing: 3px;
+  }
 }
 
 .footer-links {
   background-color: #ddd;
   padding-top: 20px;
-}
 
-.footer-links ul {
-  margin: 0 0;
-  text-align: center;
-  text-decoration: none;
-}
+  ul {
+    margin: 0 0;
+    text-align: center;
+    text-decoration: none;
+  }
 
-.footer-links li {
-  display: inline-block;
-  padding: 0 10px;
+  li {
+    display: inline-block;
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 500px) {
