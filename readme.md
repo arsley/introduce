@@ -7,6 +7,16 @@
 
 ## Specification
 
-- foundation 6
-- node 9.7.1
+- [foundation-sites](https://github.com/zurb/foundation-sites)
+- node 8.11.3
 - gulp-cli 3.9.1
+
+## with yarn
+
+```
+# develop
+$ yarn start
+
+# production build
+$ yarn build
+```
