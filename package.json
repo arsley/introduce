@@ -7,7 +7,7 @@
     "start": "gulp",
     "build": "gulp build --production"
   },
-  "author": "assly <blue20will@gmail.com>",
+  "author": "arsley <blue20will@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "~6.4.1",
