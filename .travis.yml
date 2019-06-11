@@ -8,7 +8,9 @@ cache:
 
 before_script: yarn
 
-script: yarn build
+script:
+- yarn build
+- cp CNAME dist
 
 deploy:
   provider: pages
