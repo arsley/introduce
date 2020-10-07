@@ -10,9 +10,9 @@ export default function Footer(props) {
   ));
 
   return (
-    <div className={styles.links}>
+    <footer className={styles.footer}>
       <ul>{links}</ul>
-    </div>
+    </footer>
   );
 }
 
