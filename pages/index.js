@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Heading from './components/Heading';
 import BaseContent from './components/BaseContent';
 import Timeline from './components/Timeline';
@@ -62,6 +63,10 @@ export default function Index() {
 
   return (
     <div>
+      <Head>
+        <title>Introduce | Aoshi Fujioka</title>
+      </Head>
+
       <Heading
         caption="Introduce Aoshi Fujioka"
         comment="連弾 Cross第3版"
