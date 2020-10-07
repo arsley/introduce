@@ -1,3 +1,5 @@
+/* eslint react/prop-types: 0 */
+
 import 'bulma/css/bulma.css';
 import './app.css';
 
