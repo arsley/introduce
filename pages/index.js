@@ -34,8 +34,23 @@ export default function Index() {
     },
     {
       heading: 'ICTSC2019',
-      comment: 'ICTSC2トラブルシューティングコンテスト2019本戦参加(kstm)',
+      comment: 'ICTSCトラブルシューティングコンテスト2019本戦参加(kstm)',
       date: '2019-03-01 2019-03-02',
+    },
+    {
+      heading: 'Intern on Nintendo',
+      comment: '任天堂インターンシップ2020に参加 (5days)',
+      date: '2019-09-xx',
+    },
+    {
+      heading: 'Intern on Zeals',
+      comment: '株式会社Zealsにて長期インターンシップに参加中',
+      date: '2020-02-17',
+    },
+    {
+      heading: 'Intern on Wantedly',
+      comment: '株式会社WantedlyにてSummer Internに参加',
+      date: '2020-09-14 2020-10-02',
     },
   ];
   const links = [
