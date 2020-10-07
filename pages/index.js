@@ -101,7 +101,7 @@ export default function Index() {
         そんな程度。
       </BaseContent>
 
-      <Heading caption="Hobbies" comment="pizza mac" imageName="hobbies.png" />
+      <Heading caption="Hobbies" comment="pizza mac" imageName="hobbies.png" needGrayBg />
       <BaseContent heading="Piano">
         気がついたら習っていた。
         クラシックとかを弾きこなして発表会にバンバン出る...ということはなかった。
