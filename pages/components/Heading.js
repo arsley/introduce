@@ -16,10 +16,10 @@ export default function Heading(props) {
         style={{ height: props.isFullSize ? '100vh' : '55vh' }}
       >
         <h2 className={styles.caption}>
-          <span className={!props.needGrayBg || styles.capBgGray}>{props.caption}</span>
+          <span className={props.needGrayBg ? styles.capBgGray : ''}>{props.caption}</span>
         </h2>
         <p className={styles.comment}>
-          <span className={!props.needGrayBg || styles.comBgGray}>{props.comment}</span>
+          <span className={props.needGrayBg ? styles.comBgGray : ''}>{props.comment}</span>
         </p>
       </ParallaxBanner>
     </div>

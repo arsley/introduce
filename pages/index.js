@@ -1,66 +1,12 @@
+/* eslint react/prop-types: 0 */
+
 import Head from 'next/head';
 import Heading from './components/Heading';
 import BaseContent from './components/BaseContent';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
 
-export default function Index() {
-  const timelineItems = [
-    { heading: 'Polytechnic', comment: '私立サレジオ高専情報工学科卒業', date: '2018-03-31' },
-    { heading: 'College', comment: '信州大学工学部3年に編入学', date: '2018-04-01' },
-    {
-      heading: 'Intern on Donuts',
-      comment: '株式会社Donutsサマーインターンシップ',
-      date: '2018-09-03 2018-09-14',
-    },
-    {
-      heading: 'Bug Shooting Challenge #1',
-      comment: 'Bug Shooting Challenge #1に参加',
-      date: '2018-11-18',
-    },
-    {
-      heading: 'Shinshu Future App Contest',
-      comment: '信州未来アプリコンテスト本戦 (KINC)',
-      date: '2018-12-08',
-    },
-    {
-      heading: 'Learning Kubernetes',
-      comment: '株式会社CyberAgent にて2日間の勉強会に参加',
-      date: '2018-12-xx',
-    },
-    {
-      heading: 'LaravelJPCon Staff',
-      comment: 'Laravel JP Conference にスタッフとして参加',
-      date: '2019-02-16',
-    },
-    {
-      heading: 'ICTSC2019',
-      comment: 'ICTSCトラブルシューティングコンテスト2019本戦参加(kstm)',
-      date: '2019-03-01 2019-03-02',
-    },
-    {
-      heading: 'Intern on Nintendo',
-      comment: '任天堂インターンシップ2020に参加 (5days)',
-      date: '2019-09-xx',
-    },
-    {
-      heading: 'Intern on Zeals',
-      comment: '株式会社Zealsにて長期インターンシップに参加中',
-      date: '2020-02-17',
-    },
-    {
-      heading: 'Intern on Wantedly',
-      comment: '株式会社WantedlyにてSummer Internに参加',
-      date: '2020-09-14 2020-10-02',
-    },
-  ];
-  const links = [
-    { name: 'GitHub', href: 'https://github.com/arsley' },
-    { name: 'Qiita', href: 'https://qiita.com/arsley' },
-    { name: 'Twitter', href: 'https://twitter.com/arsley_' },
-    { name: 'Facebook', href: 'https://www.facebook.com/aoshi.fujioka' },
-  ];
-
+export default function Index({ timelineItems, links }) {
   return (
     <div>
       <Head>
@@ -138,4 +84,66 @@ export default function Index() {
       <Footer links={links} />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      timelineItems: [
+        { heading: 'Polytechnic', comment: '私立サレジオ高専情報工学科卒業', date: '2018-03-31' },
+        { heading: 'College', comment: '信州大学工学部3年に編入学', date: '2018-04-01' },
+        {
+          heading: 'Intern on Donuts',
+          comment: '株式会社Donutsサマーインターンシップ',
+          date: '2018-09-03 2018-09-14',
+        },
+        {
+          heading: 'Bug Shooting Challenge #1',
+          comment: 'Bug Shooting Challenge #1に参加',
+          date: '2018-11-18',
+        },
+        {
+          heading: 'Shinshu Future App Contest',
+          comment: '信州未来アプリコンテスト本戦 (KINC)',
+          date: '2018-12-08',
+        },
+        {
+          heading: 'Learning Kubernetes',
+          comment: '株式会社CyberAgent にて2日間の勉強会に参加',
+          date: '2018-12-xx',
+        },
+        {
+          heading: 'LaravelJPCon Staff',
+          comment: 'Laravel JP Conference にスタッフとして参加',
+          date: '2019-02-16',
+        },
+        {
+          heading: 'ICTSC2019',
+          comment: 'ICTSCトラブルシューティングコンテスト2019本戦参加(kstm)',
+          date: '2019-03-01 2019-03-02',
+        },
+        {
+          heading: 'Intern on Nintendo',
+          comment: '任天堂インターンシップ2020に参加 (5days)',
+          date: '2019-09-xx',
+        },
+        {
+          heading: 'Intern on Zeals',
+          comment: '株式会社Zealsにて長期インターンシップに参加中',
+          date: '2020-02-17',
+        },
+        {
+          heading: 'Intern on Wantedly',
+          comment: '株式会社WantedlyにてSummer Internに参加',
+          date: '2020-09-14 2020-10-02',
+        },
+      ],
+      links: [
+        { name: 'GitHub', href: 'https://github.com/arsley' },
+        { name: 'Qiita', href: 'https://qiita.com/arsley' },
+        { name: 'Twitter', href: 'https://twitter.com/arsley_' },
+        { name: 'Facebook', href: 'https://www.facebook.com/aoshi.fujioka' },
+      ],
+    },
+  };
 }

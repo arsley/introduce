@@ -2,6 +2,14 @@ import PropTypes from 'prop-types';
 
 import styles from './Footer.module.scss';
 
+export async function getStaticProps() {
+  return {
+    props: {
+      links: [],
+    },
+  };
+}
+
 export default function Footer(props) {
   const links = props.links.map((link, i) => (
     <li key={i}>

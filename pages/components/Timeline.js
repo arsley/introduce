@@ -2,6 +2,14 @@ import PropTypes from 'prop-types';
 
 import styles from './Timeline.module.scss';
 
+export async function getStaticProps() {
+  return {
+    props: {
+      timelineItems: [],
+    },
+  };
+}
+
 export default function Timeline(props) {
   const timelineItems = props.timelineItems.map((item, i) => (
     <div className={styles.timelineItem} date={item.date} key={i}>
