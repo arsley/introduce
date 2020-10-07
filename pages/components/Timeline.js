@@ -11,7 +11,7 @@ export default function Timeline(props) {
   ));
   return (
     <div className="container">
-      <div className="content">{timelineItems}</div>
+      {timelineItems}
     </div>
   );
 }
