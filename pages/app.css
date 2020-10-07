@@ -17,3 +17,7 @@ h3 {
   font-size: 3.6rem;
   font-weight: 300;
 }
+
+.container {
+  padding: 2em 0;
+}
