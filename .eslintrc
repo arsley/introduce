@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "semi": "warn",
+    "arrow-body-style": "warn",
+    "comma-dangle": "warn",
+    "no-plusplus": ["warn", { "allowForLoopAfterthoughts": true }],
+    "react/display-name": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}

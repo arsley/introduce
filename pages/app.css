@@ -1,0 +1,18 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 300;
+}
+
+.container {
+  padding: 2em 0;
+}

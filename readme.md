@@ -1,21 +1,20 @@
-# My Introduce page
+# introduce
 
 ## About
 
-- アピール?用自己紹介ページ
-- イマドキのJSを使った簡単なweb製作の練習も兼ねて
+Web page for self-introduction.
 
 ## Specification
 
-- [foundation-sites](https://github.com/zurb/foundation-sites)
-- node 8.11.3
-- gulp-cli 3.9.1
+- main framework: Next.js
+- styling: Sass
+- deploy: Vercel (zeit/now)
 
 ## with yarn
 
 ```
 # develop
-$ yarn start
+$ yarn dev
 
 # production build
 $ yarn build
