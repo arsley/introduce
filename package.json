@@ -9,20 +9,20 @@
   "author": "arsley <blue20will@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bulma": "^0.9.1",
-    "next": "^9.5.3",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scroll-parallax": "^2.3.4",
-    "sass": "^1.26.11"
+    "bulma": "0.9.1",
+    "next": "10.0.3",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scroll-parallax": "2.3.4",
+    "sass": "1.26.11"
   },
   "private": true,
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.10.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-react": "^7.21.3"
+    "babel-eslint": "10.1.0",
+    "eslint": "7.10.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-react": "7.21.3"
   }
 }
